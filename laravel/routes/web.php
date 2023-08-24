@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HelloController;
+use App\Http\Controllers\SumController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,3 +30,5 @@ Route::get('/hello/sup', function () {
 Route::get('hello/super/{color}', [HelloController::class, 'index']);
 
 Route::get('/hello-blade', [HelloController::class, 'helloBlade']);
+
+Route::get('/bye-blade', [HelloController::class, 'byeByeBlade']);
