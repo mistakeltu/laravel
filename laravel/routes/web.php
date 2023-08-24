@@ -27,3 +27,5 @@ Route::get('/hello/sup', function () {
 });
 
 Route::get('hello/super/{color}', [HelloController::class, 'index']);
+
+Route::get('/hello-blade', [HelloController::class, 'helloBlade']);
