@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HelloController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,3 +25,5 @@ Route::get('/hello', function () {
 Route::get('/hello/sup', function () {
     return 'hello/sup';
 });
+
+Route::get('hello/super/{color}', [HelloController::class, 'index']);
