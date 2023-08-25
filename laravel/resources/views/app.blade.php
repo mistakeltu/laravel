@@ -7,6 +7,7 @@
     <title>@yield('title', 'no page title')</title>
 </head>
 <body>
+    @include('errors')
     @include('top')
     @yield('content')
 </body>
